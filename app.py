@@ -30,10 +30,10 @@ with tab1:
 
 with tab2:
   st.write('Content for Customer Insights')
-  customer_feedback = {
+  customer_feedback = [
         "Great service!",
         "Very satisfied with the product quality.",
         "Quick delivery and excellent support."
-  }
+  ]
   for feedback in customer_feedback:
     st.write(f'- {feedback}')
