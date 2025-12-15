@@ -37,3 +37,13 @@ with tab2:
   ]
   for feedback in customer_feedback:
     st.write(f'- {feedback}')
+
+with tab3:
+  st.write('Content for Market Trends')
+  market_trends = {        
+        "Eco-friendly products": "Increasing demand",
+        "Online shopping": "Continued growth",
+        "Subscription services": "Rising popularity"
+  }
+  for trend, status in market_trends.items():
+    st.write(f'{trend}: {status}')
