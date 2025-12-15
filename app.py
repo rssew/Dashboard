@@ -46,4 +46,8 @@ with tab3:
         "Subscription services": "Rising popularity"
   }
   for trend, status in market_trends.items():
-    st.write(f'- {trend}: {status}')
+    st.write(f'{trend}: {status}')
+
+with st.expander('More Information'):
+  st.write('Additional details on data collection methods.')
+  st.write('Data was collected through surveys and sales reports.')
