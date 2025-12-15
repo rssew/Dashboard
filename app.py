@@ -16,3 +16,7 @@ age = st.number_input('Enter your age:',
                       value = 25)
 
 st.write(f'Your age is {age}')
+
+option = st.select_box('Choose your favorite color:', 
+                       ['Red', 'Yellow', 'Blue'])
+st.write(f'You favorite color is {option}')
