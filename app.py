@@ -50,3 +50,10 @@ with tab3:
 with st.expander('More information'):
   st.write('Yap')
   st.write('Yap')
+
+placeholder = st.empty()
+for i in range(5):
+  placeholder.write(f'Loading data...{20*i}% complete')
+  time.sleep(1)
+placeholder.write('Data loading complete')
+
