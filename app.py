@@ -67,6 +67,6 @@ Business_insights = [
 ]
 
 for insights in Business_insights:
-  placeholder.write(insight)
+  placeholder.write(insights)
   time.sleep(2)
   
