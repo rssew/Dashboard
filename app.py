@@ -35,4 +35,4 @@ with tab2:
         "Quick delivery and excellent support."
   ]
   for i in customer_feedback:
-    st.write(f' - {i})
+    st.write(f' - {i}')
