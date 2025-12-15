@@ -10,3 +10,9 @@ st.write({'Name': 'Alice', 'Age': 23})
 st.write('**Bold Text** and *Italic Script*')
 
 st.header('Section 1: Introduction')
+age = st.number_input('Enter your age:,
+                      min_value = 0,
+                      max_value = 150,
+                      value = 25)
+
+st.write(f'Your age is {age}')
