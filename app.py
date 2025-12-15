@@ -3,4 +3,4 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.title('Welcome to Streamlit)
+st.title('Welcome to Streamlit')
