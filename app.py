@@ -46,4 +46,4 @@ with tab3:
         "Subscription services": "Rising popularity"
   }
   for trend, status in market_trends.items():
-    st.write(f'-{trend}: {status}')
+    st.write(f'- {trend}: {status}')
