@@ -57,3 +57,35 @@ for i in range(5):
   time.sleep(1)
 placeholder.write('Data loading complete')
 
+business_insights = [
+    "Revenue increased by 15% in Q1 2024.",
+    "Customer satisfaction improved by 10%.",
+    "Market trends show a growing demand for eco-friendly products."
+]
+
+# Display insights one by one with delay
+for insight in business_insights:
+    placeholder.write(insight)
+    time.sleep(2)
+
+# -------------------------------
+# 6. Add Interactivity
+# -------------------------------
+st.subheader("Interactive Revenue Checker")
+quarters = ["Q1 2024", "Q2 2024", "Q3 2024", "Q4 2024"]
+selected_quarter = st.selectbox("Select a quarter:", quarters)
+
+# Display revenue dynamically
+st.write(f"Revenue for {selected_quarter}: {sales_data[selected_quarter]}")
+
+# Bonus: Growth adjustment
+growth = st.slider("Adjust growth percentage:", 0, 50, 10)
+base_revenue = float(sales_data[selected_quarter].strip("$M"))
+adjusted_revenue = base_revenue * (1 + growth / 100)
+st.write(f"Adjusted Revenue for {selected_quarter}: ${adjusted_revenue:.2f}M")
+
+# -------------------------------
+# 7. Motivational Button
+# -------------------------------
+if st.button("Show Motivation"):
+    st.success("Keep pushing for growth! 🚀")
