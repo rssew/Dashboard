@@ -46,3 +46,7 @@ with tab3:
   }
   for item, trend in market_trends.items():
     st.write(f'{item}: {trend}')
+
+st.expander('More information')
+  st.write('Yap')
+  st.write('Yap')
