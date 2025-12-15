@@ -23,3 +23,6 @@ st.write(f'You favorite color is {option}')
 
 if st.button('Click me'):
   st.write('Clicked')
+
+st.success('operation success')
+
