@@ -12,4 +12,4 @@ region = st.selectbox('Select Region:', ['North', 'South', 'West', 'East'])
 
 if st.button('Submit'):
   st.write(f'Monthly Target Sales: {target}  \nRegion: {region}')
-  
+  st.success('Submission Confirmed!')
