@@ -1,17 +1,19 @@
 import streamlit as st
+import time
 
-st.title('Retail Business Dashboard')
+st.title('Business Dashboard with Streamlit Layouts')
 
-st.header('Manager Input Section')
+st.write('Objective: To demonstrate the usage of columns, tabs, and dynamic containers in a business dashboard.')
 
-st.write('Please enter the monthly sales target and select the region.')
+col1, col2, col3 = st.columns(3)
+  with col1:
+    st.header('Q1 2024')
+    st.write('Revenue: $1.2M')
 
-target = st.number_input('Enter Monthly Sales Target (in USD)', value = 0)
+  with col2:
+    st.header('Q2 2024')
+    st.write('Revenue: $1.5M')
 
-region = st.selectbox('Select Region:', ['North', 'South', 'West', 'East'])
-
-if st.button('Submit'):
-  st.write(f'Monthly Target Sales: {target}  \nRegion: {region}')
-  st.success('Submission Confirmed!')
-  if target > 100000:
-    st.write('Great! You have an ambitious target!')
+  with col3:
+    st.header('Q3 2024')
+    st.write('Revenue: $1.3M')
