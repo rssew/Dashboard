@@ -14,4 +14,4 @@ if st.button('Submit'):
   st.write(f'Monthly Target Sales: {target}  \nRegion: {region}')
   st.success('Submission Confirmed!')
   if target > 100000:
-    st.write('Great! You have an ambitious target!)
+    st.write('Great! You have an ambitious target!')
