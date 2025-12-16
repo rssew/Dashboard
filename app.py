@@ -13,3 +13,6 @@ df = pd.DataFrame({
   'Sales': sales,
   'Customers': customers
 })
+
+st.markdown('### Product Sales and Customer Data')
+st.dataframe(df)
