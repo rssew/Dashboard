@@ -14,5 +14,8 @@ df = pd.DataFrame({
   'Customers': customers
 })
 
-st.title('### Product Sales and Customer Data')
+st.markdown('### Product Sales and Customer Data')
 st.dataframe(df)
+
+st.markdown('### Sales Over Time')
+st.line_chart(sales_data)
