@@ -27,4 +27,4 @@ st.markdown('### Sales by Product')
 st.bar_chart(df[['Product', 'Sales']].set_index('Product'))
 
 st.markdown('### Customer Engagement by Product')
-st.scatter_chart(df[['Product', 'Customers']].set_index('Product')
+st.scatter_chart(df[['Product', 'Customers']].set_index('Product'))
