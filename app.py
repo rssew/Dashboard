@@ -19,3 +19,9 @@ st.dataframe(df)
 
 st.markdown('### Sales Over Time')
 st.line_chart(sales_data)
+
+st.markdown('### Cumulative Sales')
+st.area_chart(sales_data)
+
+st.markdown('### Sales by Product')
+st.bar_chart(df[['Product', 'Sales']].set_index('Product'))
