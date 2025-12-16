@@ -14,5 +14,5 @@ df = pd.DataFrame({
   'Customers': customers
 })
 
-st.title('### Product Sales and Customer Data')
+st.mrakdown('### Product Sales and Customer Data')
 st.dataframe(df)
