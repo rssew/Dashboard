@@ -1,15 +1,15 @@
 import streamlit as st
+import numpy as np
 import pandas as pd
-import os
 
-# Get the current working directory
-current_directory = os.getcwd()
-# Define the file path
-file_path = os.path.join(current_directory, 'winequality-red.csv')
+sales_data = np.random.rand(100) * 1000
 
-# Read the CSV file into a DataFrame
-df = pd.read_csv(file_path, delimiter=';')
+products = ['Product A', 'Product B', 'Product C', 'Product D', 'Product E']
+sales = np.random.rand(5) * 1000
+customers = np.random.randint(1, 100, size = 5)
 
-# Display the DataFrame in an interactive table
-st.write("Wine Quality Data")
-st.dataframe(df)
+df = pd.DataFrame({
+  'Product': products,
+  'Sales': sales,
+  'Customers': customers
+})
